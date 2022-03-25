@@ -1,0 +1,42 @@
+<!--OrderTemplate.html-->
+
+<table>
+
+    <tr><th>ORDER INFO</th><th></th></tr>
+    <tr><td>ORDER UID</td><td>{{ .Order.OrderInfo.OrderUid }}</td></tr>
+    <tr><td>TRACK NUMBER</td><td>{{ .Order.OrderInfo.TrackNumber }}</td></tr>
+    <tr><td>ENTRY</td><td>{{ .Order.OrderInfo.Entry }}</td></tr>
+    <tr><td>LOCALE</td><td>{{ .Order.OrderInfo.Locale }}</td></tr>
+    <tr><td>INTERNAL SIGNATURE</td><td>{{ .Order.OrderInfo.InternalSignature }}</td></tr>
+    <tr><td>CUSTOMER ID</td><td>{{ .Order.OrderInfo.CustomerId }}</td></tr>
+    <tr><td>DELIVERY SERVICE</td><td>{{ .Order.OrderInfo.DeliveryService }}</td></tr>
+    <tr><td>SHARD KEY</td><td>{{ .Order.OrderInfo.ShardKey }}</td></tr>
+    <tr><td>SM ID</td><td>{{ .Order.OrderInfo.SmId }}</td></tr>
+    <tr><td>DATE CREATED</td><td>{{ .Order.OrderInfo.DateCreated }}</td></tr>
+    <tr><td>OOF SHARD</td><td>{{ .Order.OrderInfo.OofShard }}</td></tr>
+
+
+    <tr><th>DELIVERY</th><th></th></tr>
+
+    <tr><td>NAME</td><td>{{ .Order.Delivery.Name }}</td></tr>
+    <tr><td>PHONE</td><td>{{ .Order.Delivery.Phone }}</td></tr>
+    <tr><td>ZIP</td><td>{{ .Order.Delivery.Zip }}</td></tr>
+    <tr><td>CITY</td><td>{{ .Order.Delivery.City }}</td></tr>
+    <tr><td>ADDRESS</td><td>{{ .Order.Delivery.Address }}</td></tr>
+    <tr><td>REGION</td><td>{{ .Order.Delivery.Region }}</td></tr>
+    <tr><td>EMAIL</td><td>{{ .Order.Delivery.Email }}</td></tr>
+
+    <tr><th>PAYMENT</th><th></th></tr>
+
+    <tr><td>TRANSACTION</td><td>{{ .Order.Payment.Transaction }}</td></tr>
+    <tr><td>REQUEST ID</td><td>{{ .Order.Payment.RequestId }}</td></tr>
+    <tr><td>CURRENCY</td><td>{{ .Order.Payment.Currency }}</td></tr>
+    <tr><td>PROVIDER</td><td>{{ .Order.Payment.Provider }}</td></tr>
+    <tr><td>AMOUNT</td><td>{{ .Order.Payment.Amount }}</td></tr>
+    <tr><td>PAYMENT DT</td><td>{{ .Order.Payment.PaymentDt }}</td></tr>
+    <tr><td>BANK</td><td>{{ .Order.Payment.Bank }}</td></tr>
+    <tr><td>DELIVERY COST</td><td>{{ .Order.Payment.DeliveryCost }}</td></tr>
+    <tr><td>GOODS TOTAL</td><td>{{ .Order.Payment.GoodsTotal }}</td></tr>
+    <tr><td>CUSTOM FEE</td><td>{{ .Order.Payment.CustomFee }}</td></tr>
+
+</table>

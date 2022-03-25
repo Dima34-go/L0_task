@@ -1,0 +1,17 @@
+<!--ItemTemplate.html-->
+
+{{ range .Items  }}
+
+<tr><th>CHRT ID</th><th>{{ .ChrtId }}</th></tr>
+<tr><td>TRACK NUMBER ID</td><td>{{ .TrackNumber }}</td></tr>
+<tr><td>PRICE</td><td>{{ .Price }}</td></tr>
+<tr><td>RID</td><td>{{ .Rid }}</td></tr>
+<tr><td>NAME</td><td>{{ .Name }}</td></tr>
+<tr><td>SALE</td><td>{{ .Sale }}</td></tr>
+<tr><td>SIZE</td><td>{{ .Size }}</td></tr>
+<tr><td>TOTAL PRICE</td><td>{{ .TotalPrice }}</td></tr>
+<tr><td>NM ID</td><td>{{ .NmId }}</td></tr>
+<tr><td>BRAND</td><td>{{ .Brand }}</td></tr>
+<tr><td>STATUS</td><td>{{ .Status }}</td></tr>
+
+{{end}}

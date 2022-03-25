@@ -1,0 +1,32 @@
+table {
+    margin: 0 auto;
+    width: 40%;
+}
+h2 {
+    color: #111;
+    font-family: ‘Open Sans’, sans-serif;
+    font-size: 30px;
+    font-weight: 100;
+    line-height: 32px;
+    margin: 0 0 12px;
+    text-align: center;
+}
+th {
+    font-size: 13px;
+    font-weight: normal;
+    background: #b9c9fe;
+    border-top: 4px solid #aabcfe;
+    border-bottom: 1px solid white;
+    color: #039;
+    padding: 8px;
+}
+td {
+    background: #e8edff;
+    border-bottom: 1px solid white;
+    color: #669;
+    border-top: 1px solid transparent;
+    padding: 8px;
+}
+tr:hover td {
+    background: #ccddff;
+}

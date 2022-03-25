@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../css/style.css" media="screen" />
+    <title>Информация о заказе</title>
+</head>
+<body>
+<h2> Данные о заказе №{{ .Order.OrderInfo.OrderId }} </h2>
+
+{{ template "OrderTemplate.html" . }}
+
+<h2> Содержимое корзины </h2>
+
+<table>
+
+{{ template "ItemTemplate.html" . }}
+
+</table>
+</body>
+</html>

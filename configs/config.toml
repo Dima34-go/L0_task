@@ -1,0 +1,13 @@
+[db]
+  host = "localhost"
+  port = 5432
+  username = "postgres"
+  db_name = "testdb"
+[server_http]
+  port = "8080"
+[nats]
+  cluster_id = "test-cluster"
+  client_id = "client-1000"
+  subject = "foo"
+  q_group = "group"
+  durable_name = "my-durable"
